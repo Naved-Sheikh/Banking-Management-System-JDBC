@@ -1,3 +1,5 @@
+---
+
 # 💳 Banking Management System (JDBC + MySQL)
 
 A **Java-based console application** to simulate core banking operations such as account creation, deposits, withdrawals, transfers, and user authentication.
@@ -99,6 +101,7 @@ Banking-Management-System-JDBC/
 **Naved Sheikh**
 📧 Email: [navedsheikh7983@gmail.com](mailto:navedsheikh7983@gmail.com)
 💻 GitHub: [Naved-Sheikh](https://github.com/Naved-Sheikh)
+🔗 LinkedIn: [Mohd Naved](https://www.linkedin.com/in/mohd-naved-82757a2aa)
 
 ---
 
@@ -107,6 +110,3 @@ Banking-Management-System-JDBC/
 This project is licensed under the **MIT License** – you are free to use, modify, and distribute it with attribution.
 
 ---
-
-If you want, I can also make a **short, professional tagline** at the top so it immediately grabs attention when a recruiter opens your repo.
-Would you like me to add that?
