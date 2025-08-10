@@ -1,119 +1,112 @@
+# 💳 Banking Management System (JDBC + MySQL)
+
+A **Java-based console application** to simulate core banking operations such as account creation, deposits, withdrawals, transfers, and user authentication.
+This project uses **JDBC** for database connectivity and **MySQL** for persistent data storage.
 
 ---
 
-```md
-<!-- Banner -->
-<p align="center">
-  <img src="https://via.placeholder.com/900x200.png?text=Banking+Management+System+%7C+Java+%2B+JDBC+%2B+MySQL" alt="Banking Management System">
-</p>
+## 📌 Features
 
-<h1 align="center">💳 Banking Management System</h1>
-<p align="center">
-  A secure, efficient, and easy-to-use banking system built with <b>Java</b>, <b>JDBC</b>, and <b>MySQL</b>.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java">
-  <img src="https://img.shields.io/badge/JDBC-Enabled-blue?style=for-the-badge&logo=oracle">
-  <img src="https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
-</p>
+* **User Registration & Login**
+* **Account Creation** (Savings, Current, etc.)
+* **Deposit & Withdraw Funds**
+* **Money Transfer Between Accounts**
+* **Check Account Balance**
+* **Secure Transactions** with Security PIN
+* **Persistent Storage** using MySQL Database
+* **Modular Java Classes** for better maintainability
 
 ---
 
-## ✨ Features
-✅ **Account Creation** – Register new customers easily  
-✅ **Deposit & Withdrawal** – Perform secure transactions  
-✅ **Balance Inquiry** – Real-time account details  
-✅ **PIN Authentication** – Enhanced security  
-✅ **Transaction Management** – JDBC transaction handling  
-✅ **Persistent Storage** – MySQL integration  
+## 🛠️ Technologies Used
 
----
-
-## 🛠 Tech Stack
-- **Language:** Java (Core + JDBC)
-- **Database:** MySQL
-- **IDE:** Eclipse / IntelliJ IDEA / NetBeans
-- **Libraries:** MySQL JDBC Driver
+| Technology        | Purpose                                |
+| ----------------- | -------------------------------------- |
+| **Java (JDK 24)** | Core application logic                 |
+| **JDBC**          | Database connectivity layer            |
+| **MySQL**         | Backend database for storing user data |
+| **SQL**           | Queries for CRUD operations            |
 
 ---
 
 ## 📂 Project Structure
-```
 
+```
 Banking-Management-System-JDBC/
-│
-├── src/
-│   └── bankingapp/
-│       ├── BankingApp.java        # Main application
-│       ├── User.java              # User entity
-│       ├── AccountManager.java    # Handles transactions
-│       ├── Accounts.java          # Account details
-│
-├── banking\_system.sql             # Database schema
-└── README.md                      # Documentation
-
-````
-
----
-
-## 🗄 Database Setup
-1. Open MySQL Workbench or terminal.
-2. Run:
-```sql
-SOURCE /path/to/banking_system.sql;
-````
-
-3. This creates the `banking_system` database with tables.
-
----
-
-## 🚀 How to Run
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/Naved-Sheikh/Banking-Management-System-JDBC.git
-
-# 2. Open in your IDE
-
-# 3. Add MySQL JDBC Driver to classpath
-#    Download: https://dev.mysql.com/downloads/connector/j/
-
-# 4. Update DB credentials in code:
-private static final String url = "jdbc:mysql://localhost:3306/banking_system";
-private static final String username = "root";
-private static final String password = "your_password";
-
-# 5. Run BankingApp.java
+│── src/
+│   └── com/
+│       └── banking/
+│           ├── BankingApp.java      # Main entry point
+│           ├── User.java            # User details & authentication
+│           ├── AccountManager.java  # Handles banking operations
+│           └── Accounts.java        # Account entity class
+│── banking_system.sql               # MySQL database schema & sample data
+│── README.md                        # Project documentation
 ```
 
 ---
 
-## 📸 Screenshots
+## ⚙️ Database Setup
 
-<p align="center">
-  <img src="https://via.placeholder.com/700x400.png?text=Screenshot+1" alt="Screenshot 1">
-  <img src="https://via.placeholder.com/700x400.png?text=Screenshot+2" alt="Screenshot 2">
-</p>
+1. **Create Database & Tables**
+   Run the provided [`banking_system.sql`](banking_system.sql) file in MySQL Workbench or CLI:
+
+   ```sql
+   SOURCE /path/to/banking_system.sql;
+   ```
+
+2. **Update Database Credentials**
+   In each Java file where JDBC connection is made, update:
+
+   ```java
+   private static final String url = "jdbc:mysql://localhost:3306/banking_system";
+   private static final String username = "root";
+   private static final String password = "your_password";
+   ```
 
 ---
 
-## 📧 Contact
+## 🚀 How to Run the Project
 
-📩 **Email:** [navedsheikh7983@gmail.com](mailto:navedsheikh7983@gmail.com)
-🐙 **GitHub:** [Naved-Sheikh](https://github.com/Naved-Sheikh)
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/Naved-Sheikh/Banking-Management-System-JDBC.git
+   ```
+
+2. **Open in Your IDE** (Eclipse / IntelliJ IDEA / VS Code)
+
+3. **Compile & Run**
+
+   ```bash
+   javac -d bin src/com/banking/*.java
+   java -cp bin com.banking.BankingApp
+   ```
+
+---
+
+## 📈 Future Improvements
+
+* GUI-based frontend with JavaFX or Swing
+* Transaction history tracking
+* Password encryption for better security
+* Admin dashboard for managing all accounts
+
+---
+
+## 👨‍💻 Author
+
+**Naved Sheikh**
+📧 Email: [navedsheikh7983@gmail.com](mailto:navedsheikh7983@gmail.com)
+💻 GitHub: [Naved-Sheikh](https://github.com/Naved-Sheikh)
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **MIT License** – you are free to use, modify, and distribute it with attribution.
 
 ---
 
-```
-
----
-to make that custom banner for you now?
-```
+If you want, I can also make a **short, professional tagline** at the top so it immediately grabs attention when a recruiter opens your repo.
+Would you like me to add that?
